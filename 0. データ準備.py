@@ -318,11 +318,11 @@ for row in date_column_list.collect():
 # MAGIC COMMENT ON COLUMN default.bronze_products.PRODUCTPICURL IS '製品画像へのURLリンクを含み、オンラインリストやマーケティング資料に不可欠です。';
 # MAGIC
 # MAGIC -- producttexts カラム
-# MAGIC COMMENT ON COLUMN default.producttexts.PRODUCTID IS 'データベース内のユニークな製品を識別し、製品情報の簡単な参照と取得を可能にします。';
-# MAGIC COMMENT ON COLUMN default.producttexts.LANGUAGE IS '製品の説明が提供される言語を指定し、ユーザーが優先する言語で情報にアクセスできるようにします。';
-# MAGIC COMMENT ON COLUMN default.producttexts.SHORT_DESCR IS '製品の簡潔な概要を提供し、重要な機能と利点を強調しています。';
-# MAGIC COMMENT ON COLUMN default.producttexts.MEDIUM_DESCR IS '製品の詳細な説明を提供し、その機能や使用方法について詳しく説明して、より深い理解を促進します。';
-# MAGIC COMMENT ON COLUMN default.producttexts.LONG_DESCR IS '製品の詳細な説明を含み、技術仕様、使用方法、そして深い知識のための他の関連情報が含まれています。';
+# MAGIC COMMENT ON COLUMN default.bronze_producttexts.PRODUCTID IS 'データベース内のユニークな製品を識別し、製品情報の簡単な参照と取得を可能にします。';
+# MAGIC COMMENT ON COLUMN default.bronze_producttexts.LANGUAGE IS '製品の説明が提供される言語を指定し、ユーザーが優先する言語で情報にアクセスできるようにします。';
+# MAGIC COMMENT ON COLUMN default.bronze_producttexts.SHORT_DESCR IS '製品の簡潔な概要を提供し、重要な機能と利点を強調しています。';
+# MAGIC COMMENT ON COLUMN default.bronze_producttexts.MEDIUM_DESCR IS '製品の詳細な説明を提供し、その機能や使用方法について詳しく説明して、より深い理解を促進します。';
+# MAGIC COMMENT ON COLUMN default.bronze_producttexts.LONG_DESCR IS '製品の詳細な説明を含み、技術仕様、使用方法、そして深い知識のための他の関連情報が含まれています。';
 # MAGIC
 # MAGIC -- salesorderitems カラム
 # MAGIC COMMENT ON COLUMN default.bronze_salesorderitems.SALESORDERID IS '各販売注文の一意の識別子を表し、特定の注文を追跡および参照することを可能にします。';
