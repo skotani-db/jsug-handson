@@ -44,7 +44,7 @@ spark.sql(f"USE CATALOG {catalog}")
 # spark.sql(f"DROP SCHEMA IF EXISTS {schema} CASCADE")
 # spark.sql(f"CREATE SCHEMA {schema}")
 spark.sql(f"USE SCHEMA {schema}")
-# spark.sql(f"CREATE VOLUME volume")
+spark.sql(f"CREATE VOLUME volume")
 
 # ストレージパス / テーブル名の設定
 schema_path = f"/Volumes/{catalog}/{schema}/volume/schema"
@@ -55,7 +55,7 @@ data_path = f"/Volumes/{catalog}/{schema}/volume/data"
 
 # DBTITLE 1,ロード対象csvの設定
 # Base URL for raw GitHub files
-BASE_URL = "https://raw.githubusercontent.com/SAP-samples/datasphere-content/main/Sample_default/CSV"
+BASE_URL = "https://raw.githubusercontent.com/skotani-db/jsug-handson/main/data"
 
 # CSV files to download
 CSV_FILES = [
