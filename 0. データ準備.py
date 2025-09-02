@@ -28,7 +28,7 @@ import os
 
 # DBTITLE 1,パラメータ設定
 # Widgetsの作成
-dbutils.widgets.text("catalog", "skato", "カタログ名")
+dbutils.widgets.text("catalog", "workspace", "カタログ名")
 dbutils.widgets.text("schema", "default", "スキーマ名")
 
 # Widgetからの値の取得
